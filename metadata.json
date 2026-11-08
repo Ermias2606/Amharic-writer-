@@ -1,0 +1,10 @@
+{
+  "name": "Remix Amharic Anthology Generator AI",
+  "description": "An AI-powered application to generate comprehensive anthology books in the Amharic language on topics ranging from philosophy and history to science and mythology.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,89 @@
+/* Global Styles & Ethiopian Manuscript Visual System */
+@keyframes parchmentGlow {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes pulseGold {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(197, 155, 39, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 15px 4px rgba(197, 155, 39, 0.2);
+  }
+}
+
+.animate-float {
+  animation: floatSlow 4s ease-in-out infinite;
+}
+
+.animate-pulse-gold {
+  animation: pulseGold 2.5s infinite;
+}
+
+/* Custom Ethiopic Manuscript Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c59b27;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8b151b;
+}
+
+/* Fidel selection highlight in crimson gold */
+::selection {
+  background-color: #8b151b;
+  color: #faf2df;
+}
+
+/* Subtle parchment grain background helper */
+.bg-parchment-pattern {
+  background-color: #faf4e6;
+  background-image: 
+    radial-gradient(#c59b27 0.75px, transparent 0.75px),
+    radial-gradient(#8b151b 0.5px, #faf4e6 0.5px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+.harag-border-glow {
+  border-image: linear-gradient(to right, #8b151b, #c59b27, #8b151b) 1;
+}
+
+@keyframes fadeInFast {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeInFast 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}

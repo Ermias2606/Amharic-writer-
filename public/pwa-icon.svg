@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#b8861b"/>
+      <stop offset="60%" stop-color="#8b151b"/>
+      <stop offset="100%" stop-color="#3d070b"/>
+    </radialGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background rounded canvas -->
+  <rect width="512" height="512" rx="110" fill="url(#bg)"/>
+
+  <!-- Gold Ornamental Margin Border -->
+  <rect x="28" y="28" width="456" height="456" rx="90" fill="none" stroke="#ffd56b" stroke-width="6" stroke-dasharray="14 7"/>
+  <rect x="38" y="38" width="436" height="436" rx="82" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.4"/>
+
+  <!-- Corner Ge'ez cross rosettes -->
+  <g fill="#ffd56b">
+    <circle cx="68" cy="68" r="8"/>
+    <circle cx="444" cy="68" r="8"/>
+    <circle cx="68" cy="444" r="8"/>
+    <circle cx="444" cy="444" r="8"/>
+  </g>
+
+  <!-- Central Parchment Book Emblem -->
+  <g filter="url(#shadow)">
+    <!-- Open Book Pages -->
+    <path d="M256,190 C220,165 150,165 110,185 L110,360 C150,340 220,340 256,365 C292,340 362,340 402,360 L402,185 C362,165 292,165 256,190 Z" fill="#faf2df" stroke="#b8861b" stroke-width="4"/>
+    <path d="M256,190 L256,365" stroke="#8b151b" stroke-width="4"/>
+    <!-- Page text lines simulation -->
+    <line x1="140" y1="225" x2="225" y2="225" stroke="#8b151b" stroke-width="3" stroke-linecap="round"/>
+    <line x1="140" y1="255" x2="220" y2="255" stroke="#4a3020" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="140" y1="285" x2="215" y2="285" stroke="#4a3020" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="140" y1="315" x2="195" y2="315" stroke="#4a3020" stroke-width="2.5" stroke-linecap="round"/>
+
+    <line x1="287" y1="225" x2="372" y2="225" stroke="#8b151b" stroke-width="3" stroke-linecap="round"/>
+    <line x1="287" y1="255" x2="367" y2="255" stroke="#4a3020" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="287" y1="285" x2="362" y2="285" stroke="#4a3020" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="287" y1="315" x2="342" y2="315" stroke="#4a3020" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Crown Ge'ez Cross Emblem -->
+  <g transform="translate(256, 120)">
+    <circle cx="0" cy="0" r="28" fill="#ffd56b" stroke="#fff" stroke-width="2"/>
+    <path d="M0 -20 L0 20 M-20 0 L20 0" stroke="#8b151b" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="6" fill="#8b151b"/>
+  </g>
+
+  <!-- Amharic Text Ribbon -->
+  <text x="256" y="425" font-family="'Noto Serif Ethiopic', 'Abyssinica SIL', serif" font-size="28" font-weight="bold" fill="#ffd56b" text-anchor="middle" letter-spacing="1">
+    የአማርኛ ስብስብ AI
+  </text>
+</svg>
